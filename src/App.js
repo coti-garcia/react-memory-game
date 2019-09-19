@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Instructions from "./components/Instructions";
 import GridImages from "./components/GridImages";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Instructions />
       <GridImages />
+      <Footer />
     </div>
   );
 }
