@@ -5,7 +5,7 @@ function Instructions() {
   return (
     <div className="Instructions">
       <div className="jumbotron">
-        <h1 className="display-4">Memory Game!</h1>
+        <h1 className="display-4">Most Delicious Memory Game!</h1>
         <p className="lead">
           Click on an image to earn points, but don't click on any more than
           once!

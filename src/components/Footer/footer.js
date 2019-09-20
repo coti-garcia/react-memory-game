@@ -3,7 +3,7 @@ import "./footer.scss";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="Footer">
       <p>Memory Game</p>
     </footer>
   );
