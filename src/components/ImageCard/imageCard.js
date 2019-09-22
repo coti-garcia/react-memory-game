@@ -1,13 +1,9 @@
 import React from "react";
 
-function ImageCard() {
+function ImageCard(props) {
   return (
     <div className="col-3">
-      <img
-        src="https://via.placeholder.com/250"
-        alt="..."
-        className="img-thumbnail"
-      ></img>
+      <img src={props.src} alt={props.alt} className="img-thumbnail"></img>
     </div>
   );
 }

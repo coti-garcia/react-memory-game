@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "src": "./assets/image1.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 2,
+    "src": "./assets/image2.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 3,
+    "src": "./assets/image3.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 4,
+    "src": "./assets/image4.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 5,
+    "src": "./assets/image5.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 6,
+    "src": "./assets/image6.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 7,
+    "src": "./assets/image7.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 8,
+    "src": "./assets/image8.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 9,
+    "src": "./assets/image9.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 10,
+    "src": "./assets/image10.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 11,
+    "src": "./assets/image11.jpg",
+    "alt": "Image by Pexels"
+  },
+  {
+    "id": 12,
+    "src": "./assets/image12.jpg",
+    "alt": "Image by Pexels"
+  }
+]
