@@ -29,6 +29,10 @@ class App extends React.Component {
     console.log(text);
     return text;
   };
+  clickCard = id => {
+    console.log(id);
+    console.log("clicked!");
+  };
 
   render() {
     return (
@@ -46,8 +50,8 @@ class App extends React.Component {
                 id={element.id}
                 key={element.id}
                 src={element.src}
-                alt={element.atl}
-                onClick={this.clickCard}
+                alt={element.alt}
+                clickCard={this.clickCard}
               />
             ))}
           </div>
