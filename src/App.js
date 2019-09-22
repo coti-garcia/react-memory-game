@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/header";
 import Instructions from "./components/Instructions/instructions";
-import ImageCard from "../ImageCard/imageCard";
+import cards from "./cards.json";
+import ImageCard from "./components/ImageCard/imageCard";
 import Footer from "./components/Footer/footer";
 
 class App extends React.Component {
@@ -11,7 +12,7 @@ class App extends React.Component {
     score: 0,
     topScore: 0,
     guess: false,
-    images: []
+    cards: cards
   };
 
   scoreFeedback = () => {
@@ -39,7 +40,17 @@ class App extends React.Component {
         />
         <Instructions />
         <div className="container">
-          <div className="row"></div>
+          <div className="row">
+            {this.state.cards.map(element => (
+              <ImageCard
+                id={element.id}
+                key={element.id}
+                src={element.src}
+                alt={element.atl}
+                onClick={this.clickCard}
+              />
+            ))}
+          </div>
         </div>
         <Footer />
       </div>
