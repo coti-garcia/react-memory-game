@@ -1,8 +1,19 @@
 .Header {
-  background: #9e3b36;
+  background: #50553f;
   color: #fff;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 10;
+  font-size: 20px;
+  padding: 10px 0;
+  .score {
+    strong {
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+    span {
+      padding: 0 15px;
+    }
+  }
 }

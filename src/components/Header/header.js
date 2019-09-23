@@ -6,13 +6,13 @@ function Header(props) {
     <header class="Header">
       <div className="container">
         <div className="row">
-          <div className="col-4">
-            <h1>Memory Game</h1>
-          </div>
-          <div className="col-4">{props.text}</div>
-          <div className="col-4">
+          <div className="col-6">{props.text}</div>
+          <div className="col-6">
             <div className="score">
-              Score: {props.score}| Top Score: {props.topScore}
+              <strong>Score:</strong> {props.score}
+              <span>|</span>
+              <strong>Top Score:</strong>
+              {props.topScore}
             </div>
           </div>
         </div>

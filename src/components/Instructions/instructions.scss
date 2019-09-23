@@ -1,6 +1,11 @@
 .Instructions {
+  padding-top: 50px;
   .jumbotron {
-    background: #50553f;
+    border-radius: 0;
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/food.png");
     color: #fff;
+    .lead {
+      text-shadow: 1px 1px 10px rgba(214, 170, 1, 1);
+    }
   }
 }

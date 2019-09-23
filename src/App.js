@@ -46,18 +46,24 @@ class App extends React.Component {
       cards: newCards
     });
 
-    if (this.state.currentId != id) {
+    if (this.state.currentId !== id) {
       this.setState({
         score: newScore,
-        guess: true,
-        topScore: newScore
+        guess: true
       });
     } else {
-      this.setState({
-        guess: false,
-        topScore: newScore,
-        score: 0
-      });
+      if (this.state.score > this.state.topScore) {
+        this.setState({
+          topScore: this.state.score,
+          guess: false,
+          score: 0
+        });
+      } else {
+        this.setState({
+          guess: false,
+          score: 0
+        });
+      }
     }
   };
 
