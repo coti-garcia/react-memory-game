@@ -12,7 +12,13 @@ class App extends React.Component {
     score: 0,
     topScore: 0,
     guess: false,
+    currentId: 0,
     cards: cards
+  };
+
+  shuffle = array => {
+    array.sort(() => Math.random() - 0.5);
+    return array;
   };
 
   scoreFeedback = () => {
@@ -26,12 +32,33 @@ class App extends React.Component {
     } else {
       text = "Click an image to begin!";
     }
-    console.log(text);
     return text;
   };
+
   clickCard = id => {
-    console.log(id);
-    console.log("clicked!");
+    let newScore = this.state.score + 1;
+    console.log("Clicked ID: " + id);
+    console.log("Current ID:" + this.state.currentId);
+    let newCards = this.shuffle(cards);
+    this.setState({
+      begin: true,
+      currentId: id,
+      cards: newCards
+    });
+
+    if (this.state.currentId != id) {
+      this.setState({
+        score: newScore,
+        guess: true,
+        topScore: newScore
+      });
+    } else {
+      this.setState({
+        guess: false,
+        topScore: newScore,
+        score: 0
+      });
+    }
   };
 
   render() {
